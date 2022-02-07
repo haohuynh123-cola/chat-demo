@@ -1,0 +1,42 @@
+<div class="container mt-5">
+    <div class="row" id="box-login">
+        <div class="col-10">
+            <h2>Tạo tên người dùng</h2>
+            <input type="text" id="username" class="form-control" />
+            <button
+                class="btn btn-sm btn-outline-success mt-1"
+                id="btn-register"
+            >Đăng ký</button>
+        </div>
+    </div>
+    <div class="row" id="box-chat">
+        <div class="col-4 text-center box-user-online">
+            <div class="title-user-online">
+                Số Người đang Online
+            </div>
+            <div id="user-online">
+
+            </div>
+
+        </div>
+        <div class="col-8">
+            <div class="row content-right">
+                Xin chào,
+                <span id="name-user-data"></span>
+                <button
+                    class="btn btn-sm btn-danger"
+                    id="btn-logout-user"
+                >Logout</button>
+            </div>
+            <div class="row box-content-message" id="list-message">
+                Nội dung chat
+            </div>
+            <div class="row">
+                <p id="focusin-message"></p>
+                <input type="text" id="message" />
+                <button id="btn-send-message">Send</button>
+            </div>
+
+        </div>
+    </div>
+</div>

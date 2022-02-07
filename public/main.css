@@ -1,0 +1,22 @@
+body {
+    background-color: #fcf8f7;
+}
+.title-user-online {
+    font-weight: 500;
+}
+.box-user-online {
+    border: 1px solid #111;
+}
+.user-online {
+    padding-top: 10px;
+    line-height: 10px;
+}
+.box-content-message {
+    height: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: scroll;
+}
+.content-right {
+    float: right;
+}
