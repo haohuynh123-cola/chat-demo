@@ -1,4 +1,4 @@
-var socket = io("https://kinhaotest.herokuapp.com");
+var socket = io("http://localhost.com:9999");
 
 socket.on("server-send-register-fail", function () {
     alert("Tên này đã được đăng ký");
