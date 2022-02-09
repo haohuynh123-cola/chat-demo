@@ -1,4 +1,4 @@
-var socket = io("http://localhost.com:9999");
+var socket = io("http://kinhaotest.herokuapp.com/");
 
 socket.on("server-send-register-fail", function () {
     alert("Tên này đã được đăng ký");
@@ -28,6 +28,11 @@ socket.on("server-send-user-focusin-message", function (data) {
 socket.on("server-send-user-focusout-message", function () {
     $("#focusin-message").html("");
 });
+function message() {
+    $("#btn-send-message").removeAttr("disabled");
+}
+
+//jquey
 $(document).ready(function () {
     $("#box-login").show();
     $("#box-chat").hide();
@@ -42,6 +47,8 @@ $(document).ready(function () {
     });
     $("#btn-send-message").click(function () {
         socket.emit("send-message", $("#message").val());
+        $("#message").val("");
+        $("#btn-send-message").attr("disabled", "disabled");
     });
     $("#message").focusin(function () {
         socket.emit("client-focusin-message", "Đang soạn tin nhắn");

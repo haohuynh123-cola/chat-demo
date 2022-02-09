@@ -33,8 +33,9 @@
             </div>
             <div class="row">
                 <p id="focusin-message"></p>
-                <input type="text" id="message" />
-                <button id="btn-send-message">Send</button>
+                <input type="text" id="message" onkeyup="message()" />
+
+                <button id="btn-send-message" disabled="true">Send</button>
             </div>
 
         </div>
