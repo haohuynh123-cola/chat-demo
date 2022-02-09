@@ -5,6 +5,9 @@ const server = require("http").Server(app);
 // const port = 9999;
 server.listen(process.env.PORT || 9999);
 const path = require("path");
+
+require("emoji-mart/css/emoji-mart.css");
+const { Picker } = require("emoji-mart");
 const { engine } = require("express-handlebars");
 
 const io = require("socket.io")(server);
